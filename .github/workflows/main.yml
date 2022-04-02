@@ -23,8 +23,8 @@ jobs:
     - name: Steps 3 Build with Maven
       run: mvn clean install
     - name: Step 4 list the current directory
-      run : ls-a
+      run : ls -a
     - name: Step 5 What is in the target folder
       run: |
          cd target
-         ls-a
+         ls -a
