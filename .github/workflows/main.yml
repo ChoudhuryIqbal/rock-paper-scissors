@@ -38,9 +38,9 @@ jobs:
       run: mkdir staging && cp target/*.war staging
     
     - name: Step 7 check the war file is copied
-      run: |
-         cd staging
-         ls -la
+      run: ls
+   
+         
     - name:  Step 8 Persist workflow data as artifact
       uses: actions/upload-artifact@v2
       with: 
